@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import TodoApp from './components/todo-app';
 
 function App() {
+  const TODOS = [
+    { title: 'Wake up', active_state: 'In Progress', date: '7/7/17' },
+    { title: 'sleep', active_state: 'Done', date: '7/7/17' }
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TodoApp todos={TODOS} />
   );
 }
 
