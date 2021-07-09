@@ -90,19 +90,19 @@ function createData(title, active_state, end_date) {
 }
 
 const rows = [
-    createData('Cupcake', 'In Progress', 3.7),
-    createData('Donut', 'Done', 25.0),
-    createData('Eclair', 262, 16.0),
-    createData('Frozen yoghurt', 159, 6.0),
-    createData('Gingerbread', 356, 16.0),
-    createData('Honeycomb', 408, 3.2),
-    createData('Ice cream sandwich', 237, 9.0),
-    createData('Jelly Bean', 375, 0.0),
-    createData('KitKat', 518, 26.0),
-    createData('Lollipop', 392, 0.2),
-    createData('Marshmallow', 318, 0),
-    createData('Nougat', 360, 19.0),
-    createData('Oreo', 437, 18.0),
+    createData('Wake up', 'In Progress', '07-09-2021'),
+    createData('Sleep', 'Done', '07-09-2021'),
+    createData('Meeting with Saman', 'Done', '07-09-2021'),
+    createData('Watch the F9', 'Done', '07-09-2021'),
+    createData('Exams at school', 'Done', '07-09-2021'),
+    createData('Birthday for Lal', 'In Progress', '07-09-2021'),
+    createData('Ice cream sandwich', 'In Progress', '07-09-2021'),
+    createData('Jelly Bean', 'In Progress', '07-09-2021'),
+    createData('KitKat', 'In Progress', '07-09-2021'),
+    createData('Lollipop', 'Done','07-09-2021'),
+    createData('Marshmallow', 'Done', '07-09-2021'),
+    createData('Nougat', 'Done', '07-09-2021'),
+    createData('Oreo', 'Done', '07-09-2021'),
 ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
 const useStyles2 = makeStyles({
