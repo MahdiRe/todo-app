@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from './header';
-import './add-todo.css';
 
-import { TextField, Button, FormControl, FormLabel, RadioGroup, FormControlLabel, Radio } from '@material-ui/core';
+import { TextField, Button, FormControl, RadioGroup, FormControlLabel, Radio } from '@material-ui/core';
+
+import './add-todo.css';
 
 class AddTodo extends React.Component {
 
@@ -35,7 +36,6 @@ class AddTodo extends React.Component {
     }
 
     AddTodo() {
-        // console.log(this.state)
     }
 
     render() {
@@ -45,9 +45,9 @@ class AddTodo extends React.Component {
                 <form>
                     <label className="label">Title</label>
                     <TextField style={{ marginTop: "5px" }} size="small" id="outlined-basic" variant="outlined" onChange={this.titleChange} placeholder="ex: Wake up" fullWidth />
-                    <br/><br/>
+                    <br /><br />
                     <label style={{ marginTop: "100px" }} className="label">End Date</label>
-                    <br/>
+                    <br />
                     <TextField
                         id="date"
                         type="date"
@@ -58,7 +58,7 @@ class AddTodo extends React.Component {
                         }}
                     />
 
-                    <br/><br/>
+                    <br /><br />
 
                     <FormControl component="fieldset">
                         <RadioGroup aria-label="active_state" name="active_state1" value={this.state.active_state} onChange={this.activeStateChange}>
@@ -67,7 +67,7 @@ class AddTodo extends React.Component {
                         </RadioGroup>
                     </FormControl>
 
-                    <br/><br/>
+                    <br /><br />
 
                     <Button style={{ marginTop: "10px" }} variant="outlined" color="primary" onClick={this.AddTodo} fullWidth>Add</Button>
 

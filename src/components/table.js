@@ -50,9 +50,9 @@ function stableSort(array, comparator) {
 }
 
 const headCells = [
-  { id: 'title', numeric: false, disablePadding: true, label: 'Task' },
-  { id: 'active_state', numeric: false, disablePadding: false, label: 'Progress' },
-  { id: 'date', numeric: false, disablePadding: false, label: 'Deadline' }
+  { id: 'title', numeric: false, disablePadding: true, label: 'Title' },
+  { id: 'active_state', numeric: false, disablePadding: false, label: 'Active State' },
+  { id: 'end_date', numeric: false, disablePadding: false, label: 'End Date' }
 ];
 
 function EnhancedTableHead(props) {
@@ -151,7 +151,7 @@ const EnhancedTableToolbar = (props) => {
       {numSelected > 0 ? (
         <Tooltip title="Delete">
           <IconButton aria-label="delete">
-            <DeleteIcon />
+            <DeleteIcon onClick={deleteItems()}/>
           </IconButton>
         </Tooltip>
       ) : (
@@ -164,6 +164,10 @@ const EnhancedTableToolbar = (props) => {
     </Toolbar>
   );
 };
+
+const deleteItems = () => {
+  console.log('hi')
+}
 
 EnhancedTableToolbar.propTypes = {
   numSelected: PropTypes.number.isRequired,
